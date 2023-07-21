@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div id="DisplayColor">
+
+            <div class="div1">
+                <h4>Display Color</h4>
+                <button type="button" href="" id="random-color" onclick="main()">Random Color</button>
+            </div>
+            <hr class="solid">
+
+            <div id="color-display" class="div2" >
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 2nd part of container -->
+
+
+
+
+
+        <div id="ChangeCopyColor">
+
+            <div class="div3">
+                <h4>Change And Copy Color</h4>
+               <button id="copyTOclipboard" type="button" href="">Copy to clipboard</button>
+            </div>
+
+            <div class="div4">
+                <p>Select copy mode</p>
+                <div class="div4-1">
+                    <label for="">RGB</label>
+                    <input type="radio" id="rgbRadio" onclick="rgbRadioChecked()" />
+                    <label for="">HEX</label>
+                    <input type="radio" id="hexRadio" onclick="hexRadioChecked()"/>
+                </div>
+            </div>
+
+            <div class="div5">
+                <div class="div5-1">
+                   <label for="">HEX</label>
+                   <div class="div5-1-1"> 
+                    <div style="background-color: #ddd;">#</div>
+                    <input type="text" placeholder="12121" id="input-hex">
+                   </div>
+                   
+                </div>
+                <div class="div5-1">
+                    <label for="">RGB</label>
+                    <div class="div5-1-1"> 
+                      <div style="background-color: #ddd;">rgb</div>
+                      <input type="text" placeholder="(0,0,0)" id="input-rgb">
+                    </div>
+                 </div>
+            </div>
+
+
+
+
+            <div class="color-sliders">
+                <p class="lead">Adjust RGB Colors</p>
+                <div class="color-sliders-group">
+                    <div>
+                        <div class="slider-label-group">
+                            <p>Red</p>
+                            <p id="color-slider-red-label">221</p>
+                        </div>
+                        <input
+                            type="range"
+                            min="0"
+                            max="255"
+                            value="221"
+                            class="color-slider"
+                            id="color-slider-red"
+                        />
+                    </div>
+                    <div>
+                        <div class="slider-label-group">
+                            <p>Green</p>
+                            <p id="color-slider-green-label">222</p>
+                        </div>
+                        <input
+                            type="range"
+                            min="0"
+                            max="255"
+                            value="222"
+                            class="color-slider"
+                            id="color-slider-green"
+                        />
+                    </div>
+                    <div>
+                        <div class="slider-label-group">
+                            <p>Blue</p>
+                            <p id="color-slider-blue-label">238</p>
+                        </div>
+                        <input
+                            type="range"
+                            min="0"
+                            max="255"
+                            value="238"
+                            class="color-slider"
+                            id="color-slider-blue"
+                        />
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
